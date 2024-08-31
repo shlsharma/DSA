@@ -27,13 +27,13 @@ def rotate_matrix(matrix):
         matt.append(mat)
     return matt
 
-# def rotate_matrix(matrix):
-#     matrix = np.array(matrix)
-#     matrix = matrix.T
-#     for i in range(np.shape(matrix)[0]):
-#         temp = matrix[i][::-1]
-#         matrix[i] = temp
-#     return matrix
+def rotate_matrix(matrix):
+    matrix = np.array(matrix)
+    matrix = matrix.T
+    for i in range(np.shape(matrix)[0]):
+        temp = matrix[i][::-1]
+        matrix[i] = temp
+    return matrix
 
 print(rotate_matrix([[1,2,3],
                  [4,5,6],
